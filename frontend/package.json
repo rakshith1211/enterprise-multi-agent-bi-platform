@@ -1,0 +1,45 @@
+{
+  "name": "enterprise-bi-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint .",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,json}\"",
+    "preview": "vite preview",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.28.4",
+    "axios": "^1.6.8",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.359.0",
+    "plotly.js-dist-min": "^2.30.0",
+    "react": "^19.0.0-rc-0",
+    "react-dom": "^19.0.0-rc-0",
+    "react-hook-form": "^7.51.1",
+    "react-router-dom": "^6.22.3",
+    "recharts": "^2.12.3",
+    "tailwind-merge": "^2.2.2",
+    "zod": "^3.22.4",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/plotly.js": "^2.29.4",
+    "@types/react": "^19.0.0-rc-0",
+    "@types/react-dom": "^19.0.0-rc-0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "postcss": "^8.4.38",
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.6"
+  }
+}
