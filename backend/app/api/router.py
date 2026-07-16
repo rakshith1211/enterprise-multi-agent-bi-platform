@@ -11,8 +11,10 @@ from app.api.recommendation.routes import router as recommendation_router
 from app.api.report.routes import router as report_router
 from app.api.orchestrator.routes import router as orchestrator_router
 from app.api.rag.routes import router as rag_router
+from app.api.auth.routes import router as auth_router
 
 api_router = APIRouter()
+api_router.include_router(auth_router, prefix="/auth", tags=["Authentication"])
 api_router.include_router(connections_router, prefix="/connections", tags=["Connections"])
 api_router.include_router(catalog_router, prefix="/catalog", tags=["Semantic Catalog"])
 api_router.include_router(planner_router, prefix="/planner", tags=["Query Planner"])
